@@ -19,6 +19,7 @@ export const createGift = async (req, res) => {
         res.status(409).json({ error: error.message })
     }
 }
+
 export const updateGift = async (req, res) => {
     try {
         const id = parseInt(req.params.id)
@@ -32,6 +33,7 @@ export const updateGift = async (req, res) => {
         res.status(409).json({ error: error.message })
     }
 }
+
 export const deleteGift = async (req, res) => {
     try {
         const id = parseInt(req.params.id)
